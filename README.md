@@ -1,7 +1,7 @@
 # eloquence
 going through the eloquent javascript book over the holidays
 
-## chapter 2
+### Chapter 2: Program Structure
 
 ```javascript
 // Looping a Triangle
@@ -54,3 +54,5 @@ for (let j = 0; j < size; j++) {
 }
 console.log(board);
 ```
+
+### Chapter 3: Functions
