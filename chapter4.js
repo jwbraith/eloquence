@@ -34,3 +34,17 @@ let reverseArray = (arr) => {
 }
 let example = [12, 24, 48, 96, 192];
 console.log(reverseArray(example));
+
+let reverseArrayInPlace = (arr) => {
+  let revArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    revArr.unshift(arr[i]);
+  }
+  for (let i = 0; i < revArr.length; i++) {
+    arr[i] = revArr[i];
+
+  }
+  return arr;
+}
+console.log(example);
+console.log(reverseArrayInPlace(example));
