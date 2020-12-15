@@ -48,3 +48,16 @@ let reverseArrayInPlace = (arr) => {
 }
 console.log(example);
 console.log(reverseArrayInPlace(example));
+
+// A List (A list?)
+let arrayToList = (arr) => {
+  let list = {};
+  list.value = arr.shift();
+  if (arr.length > 0) {
+    list.rest = arrayToList(arr);
+  } else {
+    list.rest = null;
+  }
+  return list;
+}
+console.log(arrayToList([1, 2, 3]));
