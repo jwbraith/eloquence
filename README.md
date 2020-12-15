@@ -105,13 +105,21 @@ console.log(word + " has " + countChar(word, char) + " many \"" + char + "\"s");
 
 ```javascript
 // The Sum of a Range
-let range = (start, end) => {
+let range = (start, end, step = 1) => {
   let rangeOfNum = [];
-  for (let i = start; i <= end; i++) {
-    rangeOfNum.push(i);
+  if (end > start) {
+    for (let i = start; i <= end; i += step) {
+      rangeOfNum.push(i);
+    }
+  } else {
+    for (let i = start; i >= end; i += step) {
+      rangeOfNum.push(i);
+    }
   }
+
   return rangeOfNum;
 }
+console.log(range(5, 2, -1));
 
 let sum = (summands) => {
   let total = 0;
