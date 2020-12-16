@@ -1,3 +1,4 @@
+// Deep Comparison
 let deepEqual = (comparer, comparand) => {
   if (comparer === comparand) {
     return true;

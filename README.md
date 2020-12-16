@@ -206,6 +206,7 @@ console.log(nth(list123, 3));
 ```
 
 ```javascript
+// Deep Comparison
 let deepEqual = (comparer, comparand) => {
   if (comparer === comparand) {
     return true;
